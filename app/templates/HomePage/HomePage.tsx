@@ -1,7 +1,11 @@
+import Text from "../../components/Text/Text"
+
 const HomePage = () => {
   return (
     <div>
-      <p>Hello World</p>
+      <Text fontSize={4} color="primary">
+        Hello World
+      </Text>
     </div>
   )
 }
