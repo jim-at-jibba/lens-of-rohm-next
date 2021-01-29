@@ -1,7 +1,5 @@
-const Home = () => (
-  <div>
-    <p>Hello World</p>
-  </div>
-);
+import HomePage from "../app/templates/HomePage/HomePage"
 
-export default Home;
+const Home = () => <HomePage />
+
+export default Home
