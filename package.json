@@ -8,6 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
+    "type:check": "tsc",
     "test:unit": "jest --passWithNoTests",
     "test:unit:update": "jest --passWithNoTests --updateSnapshot"
   },
