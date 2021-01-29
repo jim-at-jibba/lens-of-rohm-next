@@ -8,7 +8,13 @@ const colors = {
     700: "#2a69ac",
   },
 };
-const theme = extendTheme({ colors });
+
+const fonts = {
+  body: "Montserrat, sans-serif",
+  heading: "Raleway, serif",
+  mono: "Menlo, monospace",
+};
+const theme = extendTheme({ colors, fonts });
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
