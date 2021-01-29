@@ -1,10 +1,10 @@
-import {Heading} from "@chakra-ui/react"
+import Box from "../Box/Box"
 
 const Header = () => {
   return (
-    <div>
-      <Heading fontWeight="black">LENS OF ROHM</Heading>
-    </div>
+    <Box alignItems="center" justifyContent="center" flex={1} m={2} bg="red">
+      <header>LENS OF ROHM</header>
+    </Box>
   )
 }
 

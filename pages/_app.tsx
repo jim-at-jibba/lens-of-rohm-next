@@ -1,28 +1,15 @@
-import { ChakraProvider, extendTheme, CSSReset } from "@chakra-ui/react";
-import { AppProps } from "next/app";
+import {AppProps} from "next/app"
+import theme from "../theme/theme"
+import {ThemeProvider} from "styled-components"
+import Header from "../app/components/Header/Header"
 
-const colors = {
-  brand: {
-    900: "#1a365d",
-    800: "#153e75",
-    700: "#2a69ac",
-  },
-};
-
-const fonts = {
-  body: "Montserrat, sans-serif",
-  heading: "Raleway, serif",
-  mono: "Menlo, monospace",
-};
-const theme = extendTheme({ colors, fonts });
-
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({Component, pageProps}: AppProps) {
   return (
-    <ChakraProvider theme={theme}>
-      <CSSReset />
+    <ThemeProvider theme={theme}>
+      <Header />
       <Component {...pageProps} />
-    </ChakraProvider>
-  );
+    </ThemeProvider>
+  )
 }
 
 // Only uncomment this method if you have blocking data requirements for
@@ -37,4 +24,4 @@ function MyApp({ Component, pageProps }: AppProps) {
 //   return { ...appProps }
 // }
 
-export default MyApp;
+export default MyApp
