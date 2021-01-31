@@ -18,6 +18,7 @@ const theme: DefaultTheme = {
     body: 400,
     heading: 700,
     bold: 700,
+    black: 900,
   },
   lineHeights: {
     body: 1.5,
