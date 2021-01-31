@@ -13,7 +13,7 @@ type HeadingProps = VariantArgs &
   TypographyProps &
   SpaceProps & {
     level: number
-    children: string
+    children: React.ReactElement | string
     as?: string
   }
 const variants = {

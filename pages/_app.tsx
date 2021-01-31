@@ -2,13 +2,17 @@ import {AppProps} from "next/app"
 import theme from "../theme/theme"
 import {ThemeProvider} from "styled-components"
 import Header from "../app/components/Header/Header"
+import GlobalStyles from "../theme/globalStyles"
 
 function MyApp({Component, pageProps}: AppProps) {
   return (
-    <ThemeProvider theme={theme}>
-      <Header />
-      <Component {...pageProps} />
-    </ThemeProvider>
+    <>
+      <GlobalStyles />
+      <ThemeProvider theme={theme}>
+        <Header />
+        <Component {...pageProps} />
+      </ThemeProvider>
+    </>
   )
 }
 
